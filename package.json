@@ -1,0 +1,24 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "env-cmd": "8.0.2",
+    "graphql-cli": "^4.1.0",
+    "graphql-import": "^1.0.2",
+    "graphql-yoga": "^1.18.3",
+    "jsonwebtoken": "^8.5.1",
+    "prisma-binding": "^2.1.1",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "dev": "nodemon src/index.mjs --ext js,mjs,graphql",
+    "get-schema": "graphql get-schema -p prisma"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
